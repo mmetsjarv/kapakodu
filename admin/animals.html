@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loomade haldamine | Admin | Mario Kapakodu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">&#128062; Mario Kapakodu &ndash; Admin</a>
+      <a class="btn btn-outline-light btn-sm" href="../login.html">Logi välja</a>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-3 col-lg-2 bg-secondary-subtle py-3 admin-sidebar">
+        <ul class="nav nav-pills flex-column bg-dark rounded p-2">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Töölaud</a></li>
+          <li class="nav-item"><a class="nav-link active" href="animals.html">Loomad</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="animal_add.html">Lisa uus loom</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Vaata avalehte</a></li>
+        </ul>
+      </aside>
+      <main class="col-md-9 col-lg-10 py-4 px-md-4">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+          <h1 class="mb-0">Loomade haldamine</h1>
+          <a href="animal_add.html" class="btn btn-success">Lisa uus loom</a>
+        </div>
+
+        <form class="row g-2 mb-3" action="#" method="get">
+          <div class="col-md-6">
+            <label for="search" class="visually-hidden">Otsi</label>
+            <input type="search" class="form-control" id="search" name="search" placeholder="Otsi nime järgi">
+          </div>
+          <div class="col-md-4">
+            <label for="status" class="visually-hidden">Staatus</label>
+            <select class="form-select" id="status" name="status">
+              <option value="">Kõik staatused</option>
+              <option>Otsib kodu</option>
+              <option>Broneeritud</option>
+              <option>Ravil</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">Filtreeri</button>
+          </div>
+        </form>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-hover align-middle">
+            <thead>
+              <tr><th scope="col">ID</th><th scope="col">Nimi</th><th scope="col">Liik</th>
+                  <th scope="col">Sugu</th><th scope="col">Vanus</th><th scope="col">Staatus</th>
+                  <th scope="col">Tegevused</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Rex</td>
+              <td>Koer</td>
+              <td>Isane</td>
+              <td>3 aastat</td>
+              <td><span class="badge text-bg-success">Otsib kodu</span></td>
+              <td class="text-nowrap">
+                <a href="../animal.html" class="btn btn-sm btn-outline-primary">Vaata</a>
+                <a href="animal_add.html" class="btn btn-sm btn-outline-secondary">Muuda</a>
+                <button type="button" class="btn btn-sm btn-outline-danger">Kustuta</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Miisu</td>
+              <td>Kass</td>
+              <td>Emane</td>
+              <td>2 aastat</td>
+              <td><span class="badge text-bg-success">Otsib kodu</span></td>
+              <td class="text-nowrap">
+                <a href="../animal.html" class="btn btn-sm btn-outline-primary">Vaata</a>
+                <a href="animal_add.html" class="btn btn-sm btn-outline-secondary">Muuda</a>
+                <button type="button" class="btn btn-sm btn-outline-danger">Kustuta</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Bella</td>
+              <td>Koer</td>
+              <td>Emane</td>
+              <td>6 aastat</td>
+              <td><span class="badge text-bg-warning">Broneeritud</span></td>
+              <td class="text-nowrap">
+                <a href="../animal.html" class="btn btn-sm btn-outline-primary">Vaata</a>
+                <a href="animal_add.html" class="btn btn-sm btn-outline-secondary">Muuda</a>
+                <button type="button" class="btn btn-sm btn-outline-danger">Kustuta</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Tiger</td>
+              <td>Kass</td>
+              <td>Isane</td>
+              <td>8 kuud</td>
+              <td><span class="badge text-bg-success">Otsib kodu</span></td>
+              <td class="text-nowrap">
+                <a href="../animal.html" class="btn btn-sm btn-outline-primary">Vaata</a>
+                <a href="animal_add.html" class="btn btn-sm btn-outline-secondary">Muuda</a>
+                <button type="button" class="btn btn-sm btn-outline-danger">Kustuta</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Luna</td>
+              <td>Koer</td>
+              <td>Emane</td>
+              <td>1 aasta</td>
+              <td><span class="badge text-bg-success">Otsib kodu</span></td>
+              <td class="text-nowrap">
+                <a href="../animal.html" class="btn btn-sm btn-outline-primary">Vaata</a>
+                <a href="animal_add.html" class="btn btn-sm btn-outline-secondary">Muuda</a>
+                <button type="button" class="btn btn-sm btn-outline-danger">Kustuta</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Oskar</td>
+              <td>Kass</td>
+              <td>Isane</td>
+              <td>7 aastat</td>
+              <td><span class="badge text-bg-info">Ravil</span></td>
+              <td class="text-nowrap">
+                <a href="../animal.html" class="btn btn-sm btn-outline-primary">Vaata</a>
+                <a href="animal_add.html" class="btn btn-sm btn-outline-secondary">Muuda</a>
+                <button type="button" class="btn btn-sm btn-outline-danger">Kustuta</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+    <nav aria-label="Loomade tabeli lehekülgede vahetus">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><span class="page-link">Eelmine</span></li>
+        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Järgmine</a></li>
+      </ul>
+    </nav>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

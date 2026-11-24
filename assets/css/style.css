@@ -1,0 +1,12 @@
+.hero {
+  min-height: 420px;
+  background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+              linear-gradient(135deg, #2a9d8f, #264653);
+}
+.animal-img {
+  height: 220px;
+  object-fit: cover;
+}
+.admin-sidebar {
+  min-height: calc(100vh - 56px);
+}
